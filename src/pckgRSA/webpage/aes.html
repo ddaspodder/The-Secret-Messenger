@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>hELP_mYsTEGOaPP</title>
+<link rel="stylesheet" href="styles2.css" type="text/css" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+
+<body>
+
+		<section id="body" class="width">
+			<aside id="sidebar" class="column-left">
+
+			<header>
+				<h1><a href="#">HELP</a></h1>
+
+				
+			</header>
+
+			<nav id="mainnav">
+  				<ul>
+                            		<li><a href="index2.html">Introduction</a></li>
+                           		 <li><a href="cryptography.html">Cryptography and its types</a></li>
+                           		 <li><a href="steganography.html">Steganography and its types</a></li>
+								 <li class="selected-item"><a href="aes.html">AES</a></li>
+									<li><a href="rsa.html">RSA</a></li>
+									<li><a href="de.html">Digital Envelope</a></li>
+									<li><a href="lsb.html">LSB</a></li>
+									<li><a href="mlsb.html">Modified LSB</a></li>
+                            		<li><a href="how.html">How it's Done</a></li>
+                            		
+                        	</ul>
+			</nav>
+
+			
+			
+			</aside>
+			<section id="content" class="column-right">
+                		
+	    <article>
+				
+			
+			<h2>AES</h2>
+			<p>
+			The Advanced Encryption Standard (AES), also known by its original name Rijndael, is a specification for the encryption of electronic data established by the U.S. National Institute of Standards and Technology (NIST) in 2001.
+			For AES, NIST selected three members of the Rijndael family, each with a block size of 128 bits, but three different key lengths: 128, 192 and 256 bits.
+			The key size used for an AES cipher specifies the number of repetitions of transformation rounds that convert the input, called the plaintext, into the final output, called the ciphertext. 
+			</p>
+			<p>
+			The number of cycles of repetition are as follows:
+            <ul class="styledlist">
+                <li>10 cycles of repetition for 128-bit keys.</li>
+                <li>12 cycles of repetition for 192-bit keys.</li>
+				<li>14 cycles of repetition for 256-bit keys.</li>
+                
+            </ul>
+			</p>
+			<h3>Algorithm</h3>
+			<p>
+			<ol>
+			<li>KeyExpansions - round keys are derived from the cipher key using Rijndael's key schedule. AES requires a separate 128-bit round key block for each round plus one more.</li>
+			<li>InitialRound
+				<ol type="a">
+				<li>AddRoundKey - each byte of the state is combined with a block of the round key using bitwise xor.</li>
+				</ol>
+			<li>Rounds</li>
+				<ol type="a">
+				<li>SubBytes - a non-linear substitution step where each byte is replaced with another according to a lookup table.</li>
+				<li>ShiftRows - a transposition step where the last three rows of the state are shifted cyclically a certain number of steps.</li>
+				<li>MixColumns - a mixing operation which operates on the columns of the state, combining the four bytes in each column.</li>
+				<li>AddRoundKey</li>
+				</ol>
+			</li>
+			<li>Final Round (no MixColumns)</li>
+				<ol type="a">
+				<li>SubBytes</li>
+				<li>ShiftRows</li>
+				<li>AddRoundKey</li>
+				</ol>
+			</ol>
+			</p>
+		
+		<p>	For more information on this topic visit: <a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard" target="_blank">https://en.wikipedia.org/wiki/Advanced_Encryption_Standard</a></p>
+			
+			
+		<a href="rsa.html" class="button button-reversed">Next >></a>
+
+
+		
+		</article>
+	
+		
+
+			
+			<footer class="clear">
+				<p>&copy; mYsTEGOaPP by tEAMsTEGANOGRAPHY</p>
+			</footer>
+
+		</section>
+
+		<div class="clear"></div>
+
+	</section>
+	
+
+</body>
+</html>

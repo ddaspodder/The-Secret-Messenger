@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>hELP_mYsTEGOaPP</title>
+<link rel="stylesheet" href="styles2.css" type="text/css" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+
+<body>
+
+		<section id="body" class="width">
+			<aside id="sidebar" class="column-left">
+
+			<header>
+				<h1><a href="#">HELP</a></h1>
+
+				
+			</header>
+
+			<nav id="mainnav">
+  				<ul>
+                            		<li><a href="index2.html">Introduction</a></li>
+                           		 <li><a href="cryptography.html">Cryptography and its types</a></li>
+                           		 <li><a href="steganography.html">Steganography and its types</a></li>
+								 <li><a href="aes.html">AES</a></li>
+									<li><a href="rsa.html">RSA</a></li>
+									<li><a href="de.html">Digital Envelope</a></li>
+									<li class="selected-item"><a href="lsb.html">LSB</a></li>
+									<li><a href="mlsb.html">Modified LSB</a></li>
+                            		<li><a href="how.html">How it's Done</a></li>
+                            		
+                        	</ul>
+			</nav>
+
+			
+			
+			</aside>
+			<section id="content" class="column-right">
+                		
+	    <article>
+				
+			
+			<h2>LSB</h2>
+			<p>
+			Least significant bits (LSB) insertion is a simple approach to embedding information in image file. 
+			The simplest steganographic techniques embed the bits of the message directly into least significant bit plane of the cover-image in a deterministic sequence. 
+			Modulating the least significant bit does not result in human-perceptible difference because the amplitude of the change is small. 
+			In this method the LSB of a byte is replaced with an message bit.
+			This technique works well for image, audio and video steganography. 
+			To the human eye, the resulting image will look identical to the cover object.
+			</p>
+			
+			<h3>Operation</h3>
+			<p>
+			The least significant bit (in other words, the 8th bit) of some or all of the bytes inside an image is changed to a bit of the secret message. 
+			Digital images are mainly of two types (i) 24 bit images and (ii) 8 bit images. In 24 bit images we can embed three bits of information in each pixel, one in each LSB position of the three eight bit values. Increasing or decreasing the value by changing the LSB does not change the appearance of the image; 
+			much so theresultant stego image looks almost same as the cover image. In 8 bit images, one bit of information can be hidden.
+			The cover image is the original image on which the message is to be hidden. The stego image is the modified image obtained after
+			hiding the message in it.<br /> The LSB embedding works by modifying the last bit i.e, the least significant bit of each color channel of the pixel of cover image
+			and making it equal to the message bit. The order in which the pixels is to be chosen is determined by various embedding algorithms.<br/>
+			The message bits can be retrieved from the stego image by retrieving the lsb of each color channel of the pixels. The order in which the pixels are chosen are determined
+			by the same algorithm which was used for embedding the message bits.
+			</p>
+		
+		<p>	For more information on this topic visit: <a href="https://simple.wikipedia.org/wiki/RSA_(algorithm)" target="_blank">https://simple.wikipedia.org/wiki/RSA_(algorithm)</a></p>
+			
+			
+		<a href="mlsb.html" class="button button-reversed">Next >></a>
+
+
+		
+		</article>
+	
+		
+
+			
+			<footer class="clear">
+				<p>&copy; mYsTEGOaPP by tEAMsTEGANOGRAPHY</p>
+			</footer>
+
+		</section>
+
+		<div class="clear"></div>
+
+	</section>
+	
+
+</body>
+</html>

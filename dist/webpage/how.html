@@ -1,0 +1,257 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>hELP_mYsTEGOaPP</title>
+<link rel="stylesheet" href="styles2.css" type="text/css" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+
+<body>
+
+		<section id="body" class="width">
+			<aside id="sidebar" class="column-left">
+
+			<header>
+				<h1><a href="#">HELP</a></h1>
+
+				
+				
+			</header>
+
+			<nav id="mainnav">
+  				<ul>
+                            		<li><a href="index2.html">Introduction</a></li>
+                           		 <li><a href="cryptography.html">Cryptography and its types</a></li>
+                           		 <li><a href="steganography.html">Steganography and its types</a></li>
+								 <li><a href="aes.html">AES</a></li>
+									<li><a href="rsa.html">RSA</a></li>
+									<li><a href="de.html">Digital Envelope</a></li>
+									<li><a href="lsb.html">LSB</a></li>
+									<li><a href="mlsb.html">Modified LSB</a></li>
+                            		<li  class="selected-item"><a href="how.html">How it's Done</a></li>
+                            		
+                        	</ul>
+			</nav>
+
+			
+			
+			</aside>
+			<section id="content" class="column-right">
+                		
+	    <article>
+				
+			
+			<h2>How it's done</h2>
+			<p>
+			In this section we will provide you with a simple guide on how to use the application.
+			The various components of the application and each of their purpose are given below:
+			</p>
+			<p>
+			<img src="ss.jpg" alt="Mountain View" style="width:804px;height:500;">
+			</p>
+			<p>
+			<ol type="1">
+			<li>Message Pane : The message is typed here or a text file can be displayed.</li>
+			<li>Clear : This button is used to clear the text in the message pane.</li>
+			<li>Save : This button is used to save the text displayed in the message pane.</li>
+			<li>Open : This button is used to open a text document and display it in the message pane.</li>
+			<li>Encryption Algorithm : This radio buttons are used to select the algoritm used for encryption or decryption.</li>
+			<li>Steganoography Algorithm : This radio buttons are used to select the algoritm used for hiding or retrieve message from image.</li>
+			<li>Generate Key : This button is used to generate a key for the selected algorithm to be used for encryption-decryption.</li>
+			<li>Choose Key : This button is used to choose a previously generated key for the selected algorithm to be used for encryption-decryption.</li>
+			<li>Encrypt : This button is used to encrypt the message in the message pane and display the corresponding cypher text.</li>
+			<li>Decrypt : This button is used to decrypt the cypher text in the message pane and display the original message.</li>
+			<li>Hide : This button is used to hide the text in the messsage pane within the image.</li>
+			<li>Retrieve : This button is used to retrieve the hidden text from the stego image and display it in the message pane.</li>
+			<li>Send/Receive : This button is used to send/receive the key, encrypted messages or stego images.</li>
+			<li>Image Pane : The cover image/ stego image gets displayed here.</li>
+			<li>Choose Image : This button is used to choose an image.</li>
+			<li>Analyze : This button is used to analyze whether the message will fit in the cover image.</li>
+			<li>Notification Pane : Various notifications or suggestions are displayed here.</li>
+			<li>Help : This button is used to display the help section.</li>
+			</ol>
+			</p>
+			<p>
+			You can do the following with your application:
+			<ul class="styledlist">
+                <li>Encrypt a message</li>
+                <li>Decrypt an encrypted message</li>
+                <li>Hide a message in an image</li>
+                <li>Retrieve hidden message from an image</li>
+                <li>Encrypt a message and then hide it in an image</li>
+                <li>Retrieve encrypted message from an image and then decrypt it</li>
+                <li>Use multiple encryption</li>
+                <li>Use Digital Envelope technique</li>
+				<li>Try various combinations of above techniques</li>
+            </ul>
+			</p>
+			<h3>Encrypting a message</h3>
+			<p>
+			Steps:
+			<ol class="styledlist" type="1">
+				<li>Write a message in the message pane or open a text document.</li>
+				<li>Choose the encryption algorithm you want to use.</li>
+				<li>Generate or Choose a key/s.</li>
+				<li>Hit the "Encrypt" button.</li>
+				<li>Save the encrypted text.</li>
+				<li>Send the key(public) and the encrypted message to the receiver(incase of Symmetric key cryptography it is not advised to send the key through email).</li>
+				
+			</ol>
+			
+			</p>
+			
+			<h3>Decrypting an encrypted message</h3>
+			<p>
+			Steps:
+			<ol class="styledlist" type="1">
+				<li>Receive the encrypted message and key(public) from sender.</li>
+				<li>Open the encrypted message.</li>
+				<li>Choose the same encryption algorithm as used by sender.</li>
+				<li>Choose the key from the sender.</li>
+				<li>Hit the "Decrypt button".</li>
+				<li>Save the original message.</li>
+				
+			</ol>
+			</p>
+			<h3>Hiding a message in an image</h3>
+			<p>
+			Steps:
+			<ol class="styledlist" type="1">
+				<li>Write a message in the message pane or open a text document.</li>
+				<li>Choose the steganography algorithm you want to use.</li>
+				<li>Hit the "Choose Image" button to choose a cover image.</li>
+				<li>Hit the "Hide" button and save the stego image.</li>
+				<li>Send the stego image to the receiver.</li>
+			</ol>
+			</p>
+			<h3>Retrieveing hidden message from an image</h3>
+			<p>
+			Steps:
+			<ol class="styledlist" type="1">
+				<li>Receive the stego image sent by sender.</li>
+				<li>Choose the image sent by the sender by hitting the "Choose Image" button.</li>
+				<li>Choose the same steganography algorithm as used by the sender.</li>
+				<li>Hit the "Retrieve" button and the original message is displayed in the message pane.</li>
+				<li>Save the original message.</li>
+			</ol>
+			</p>
+			<h3>Encrypt + Hide</h3>
+			<p>
+			Steps:
+			<ol class="styledlist" type="1">
+				<li>Write a message in the message pane or open a text document.</li>
+				<li>Choose the encryption algorithm you want to use.</li>
+				<li>Generate or Choose a key/s.</li>
+				<li>Hit the "Encrypt" button.</li>
+				<li>Choose the steganography algorithm you want to use.</li>
+				<li>Hit the "Choose Image" button to choose a cover image.</li>
+				<li>Hit the "Hide" button and save the stego image.</li>
+				<li>Send the key(public) and the stego image to the receiver.</li>
+			</ol>
+			</p>
+			<h3>Retrieve + Decrypt</h3>
+			<p>
+			Steps:
+			<ol class="styledlist" type="1">
+				<li>Receive the stego image and the key(public) sent by sender.</li>
+				<li>Choose the image sent by the sender by hitting the "Choose Image" button.</li>
+				<li>Choose the steganography algorithm used by the sender.</li>
+				<li>Hit the "Retrieve" button and the encrypted message is displayed in the message pane.</li>
+				<li>Receive the key from sender.</li>
+				<li>Choose the same encryption algorithm as used by sender.</li>
+				<li>Choose the key from the sender.</li>
+				<li>Hit the "Decrypt button".</li>
+				<li>Save the original message.</li>
+			</ol>
+			</p>
+			<h3>Multiple-Encryption</h3>
+			<p>
+			Steps:
+			<ol class="styledlist" type="1">
+				<li>Write a message in the message pane or open a text document.</li>
+				<li>Choose the encryption algorithm you want to use.</li>
+				<li>Generate or Choose a key/s.</li>
+				<li>Hit the "Encrypt" button.</li>
+				<li>Save the encrypted text.</li>
+				<li>Send the key(public) to the receiver.</li>
+				<li>Repeat steps 2 to 5 as many times as you want.</li>
+				<li>Send the encrypted message to the receiver.</li>
+			</ol>
+			</p>
+			<h3>Multiple-Decryption</h3>
+			<p>
+			Steps:
+			<ol class="styledlist" type="1">
+				<li>Receive the encrypted message and keys(public) from sender.</li>
+				<li>Open the encrypted message.</li>
+				<li>Choose the encryption algorithms in the reverse of the order as used by sender.</li>
+				<li>Choose the keys from the sender in reverse of order in which they were sent.</li>
+				<li>Hit the "Decrypt button".</li>
+				<li>Repeat steps 2 to 5 as many times as the number of keys.</li>
+				<li>Save the original message.</li>
+			</ol>
+			</p>
+			<h3>Digital Envelope Technique</h3>
+			<h4>Encryption</h4>
+			<p>
+			Steps:
+			<ol class="styledlist" type="1">
+				
+				<li>Choose the RSA encryption algorithm.</li>
+				<li>Generate the keys.</li>
+				<li>Choose the AES encryption algorithm.</li>
+				<li>Generate a key.</li>
+				<li>Open the AES key in the message pane</li>
+				<li>Choose the RSA encryption algorithm.</li>
+				<li>Choose the same RSA keys</li>
+				<li>Hit the "Encrypt" button.</li>
+				<li>Save the encrypted key.</li>
+				<li>Send the encrypted AES key and the RSA public key to the receiver.</li>
+				<li>Write a message in the message pane or open a text document.</li>
+				<li>Choose AES encryption algorithm</li>
+				<li>Choose the same AES key</li>
+				<li>Hit the "Encrypt" button.</li>
+				<li>Send the encrypted message to the receiver.</li>
+			</ol>
+			</p>
+			<h4>Decryption</h4>
+			<p>
+			Steps:
+			<ol class="styledlist" type="1">
+				
+				<li>Choose the RSA encryption algorithm.</li>
+				<li>Choose the RSA key sent by the sender.</li>
+				<li>Choose the AES encryption algorithm.</li>
+				<li>Open the AES key in the message pane</li>
+				<li>Hit the "Decrypt" button.</li>
+				<li>Save the decrypted key.</li>
+				<li>Choose AES encryption algorithm.</li>
+				<li>Choose the saved decrypted AES key.</li>
+				<li>Open the encrypted message in the message pane.</li>
+				<li>Hit the "Decrypt" button.</li>
+				<li>Save the original message.</li>
+			</ol>
+			</p>
+		
+
+
+		
+		</article>
+	
+		
+
+			
+			<footer class="clear">
+				<p>&copy; mYsTEGOaPP by tEAMsTEGANOGRAPHY</p>
+			</footer>
+
+		</section>
+
+		<div class="clear"></div>
+
+	</section>
+	
+
+</body>
+</html>

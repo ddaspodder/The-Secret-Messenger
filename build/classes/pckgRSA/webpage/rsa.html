@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>hELP_mYsTEGOaPP</title>
+<link rel="stylesheet" href="styles2.css" type="text/css" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+
+<body>
+
+		<section id="body" class="width">
+			<aside id="sidebar" class="column-left">
+
+			<header>
+				<h1><a href="#">HELP</a></h1>
+
+				
+			</header>
+
+			<nav id="mainnav">
+  				<ul>
+                            		<li><a href="index2.html">Introduction</a></li>
+                           		 <li><a href="cryptography.html">Cryptography and its types</a></li>
+                           		 <li><a href="steganography.html">Steganography and its types</a></li>
+								 <li><a href="aes.html">AES</a></li>
+									<li class="selected-item"><a href="rsa.html">RSA</a></li>
+									<li><a href="de.html">Digital Envelope</a></li>
+									<li><a href="lsb.html">LSB</a></li>
+									<li><a href="mlsb.html">Modified LSB</a></li>
+                            		<li><a href="how.html">How it's Done</a></li>
+                            		
+                        	</ul>
+			</nav>
+
+			
+			
+			</aside>
+			<section id="content" class="column-right">
+                		
+	    <article>
+				
+			
+			<h2>RSA</h2>
+			<p>
+			RSA is an algorithm used by modern computers to encrypt and decrypt messages. It is an asymmetric cryptographic algorithm.
+			RSA stands for Ron Rivest, Adi Shamir and Leonard Adleman.
+			</p>
+			
+			<h3>Operation</h3>
+			<p>
+			RSA involves a public key and private key. The public key can be known to everyone; it is used to encrypt messages. Messages encrypted using the public key can only be decrypted with the private key. The keys for the RSA algorithm are generated the following way:
+			<ol type="1">
+			<li>Choose two different large random prime numbers <b>p</b> and <b>q</b>.</li>
+			<li>Calculate <b>n=p*q</b>.
+			<b>n</b> is the modulus for the public key and the private keys.</li>
+			<li>Calculate <b>phi=(p-1)*(q-1)</b>.</li>
+			<li>Choose an integer <b>e</b> such that <b> 1 < e < phi </b> and <b>e</b> is coprime to <b>phi</b>.
+			<b>e</b> is released as the public key exponent. A popular choice for the public exponents is <b>e = 2^16 + 1 = 65537</b>.</li>
+
+			<li>Compute <b>d </b> to satisfy the congruence relation <b>de=1 mod(phi)</b>.
+			<b>d</b> is kept as the private key exponent</li>
+			</ol>
+			The public key is made of the modulus <b>n</b> and the public (or encryption) exponent <b>e</b>.
+			The private key is made of the modulus <b>n</b> and the private (or decryption) exponent <b>d</b>. which must be kept secret.
+			</p>
+			<p>
+			The message <b>M</b> into a number  <b>m</b> smaller than <b>n</b> by using an agreed-upon reversible protocol known as a padding scheme.
+			The cipher text <b>c</b> can be generated from <b>m</b> using the following relation:<br/>
+			<b>c=m^e mod n</b>.<br />
+			<b>m</b> can be recovered from <b>c</b> by using her private key <b>d</b> in the following relation:<br/>
+			<b>m=c^d mod n</b>.
+			</p>
+		
+		<p>	For more information on this topic visit: <a href="https://simple.wikipedia.org/wiki/RSA_(algorithm)" target="_blank">https://simple.wikipedia.org/wiki/RSA_(algorithm)</a></p>
+			
+			
+		<a href="de.html" class="button button-reversed">Next >></a>
+
+
+		
+		</article>
+	
+		
+
+			
+			<footer class="clear">
+				<p>&copy; mYsTEGOaPP by tEAMsTEGANOGRAPHY</p>
+			</footer>
+
+		</section>
+
+		<div class="clear"></div>
+
+	</section>
+	
+
+</body>
+</html>

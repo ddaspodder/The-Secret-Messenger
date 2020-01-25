@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>hELP_mYsTEGOaPP</title>
+<link rel="stylesheet" href="styles2.css" type="text/css" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+
+<body>
+
+		<section id="body" class="width">
+			<aside id="sidebar" class="column-left">
+
+			<header>
+				<h1><a href="#">HELP</a></h1>
+
+				
+			</header>
+
+			<nav id="mainnav">
+  				<ul>
+                            		<li><a href="index2.html">Introduction</a></li>
+                           		 <li><a href="cryptography.html">Cryptography and its types</a></li>
+                           		 <li><a href="steganography.html">Steganography and its types</a></li>
+								 <li><a href="aes.html">AES</a></li>
+									<li><a href="rsa.html">RSA</a></li>
+									<li><a href="de.html">Digital Envelope</a></li>
+									<li><a href="lsb.html">LSB</a></li>
+									<li  class="selected-item"><a href="mlsb.html">Modified LSB</a></li>
+                            		<li><a href="how.html">How it's Done</a></li>
+                            		
+                        	</ul>
+			</nav>
+
+			
+			
+			</aside>
+			<section id="content" class="column-right">
+                		
+	    <article>
+				
+			
+			<h2>Modified LSB</h2>
+			<p>
+			 The original LSB method can be modified and improved in several ways. In our application we are implementing a modified version of LSB
+			 by altering the order in which pixels are chosen from the cover image for embedding the message bits. In the original version pixels are 
+			 chosen in a linear fashion, i.e, from left to right in each row and from first to last row in increasing order.When the bit planes of the image are examined by an observer, the location of the embedding will be easily detected.
+			 Since the pixels of the image are organized in the same manner as the original image, 
+			 the observer will be able to decode the image without any extra effort.
+			 The Spiral Embedding is novel embedding technique designed to resist a visual attack.
+			 The Spiral Embedding orders the pixels of the image in a spiral pattern to prevent the embedding from being as easily decoded.
+			</p>
+			
+			<h3>Operation</h3>
+			<p>
+			The embedding or extraction process chooses the pixels in the following fashion:
+			</p>
+			<p>
+			<img src="Capture.jpg" alt="image not available" width=700 height=300 />
+			</p>
+		
+		<p>	For more information on this topic visit: <a href="https://simple.wikipedia.org/wiki/RSA_(algorithm)" target="_blank">https://simple.wikipedia.org/wiki/RSA_(algorithm)</a></p>
+			
+			
+		<a href="how.html" class="button button-reversed">Next >></a>
+
+
+		
+		</article>
+	
+		
+
+			
+			<footer class="clear">
+				<p>&copy; mYsTEGOaPP by tEAMsTEGANOGRAPHY</p>
+			</footer>
+
+		</section>
+
+		<div class="clear"></div>
+
+	</section>
+	
+
+</body>
+</html>
